@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(24,52,55);
+    background: -moz-linear-gradient(90deg, rgba(24,52,55,1) 36%, rgba(19,51,60,1) 53%, rgba(36,1,24,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(24,52,55,1) 36%, rgba(19,51,60,1) 53%, rgba(36,1,24,1) 100%);
+    background: linear-gradient(90deg, rgba(24,52,55,1) 36%, rgba(19,51,60,1) 53%, rgba(36,1,24,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#183437",endColorstr="#240118",GradientType=1);
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;;
+}
+
+video {
+    width: 80%;
+    height: 80%;
+    align-items: center;
+    grid-column: 6 / 10;
+    grid-row: 6 / 10;
+}
+
+.display {
+    display: grid;
+    grid-column: 1 / 12;
+    grid-row: 1 / 12;
+}
+
+.title {
+    background-color: rgba(128, 128, 128, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+}
+
+.title h1 {
+    letter-spacing: 5px;
+    padding: 10px;
+    color: rgb(17, 119, 17);
+    box-shadow: 4px 3px 3px 1px grey;
+    text-shadow: 5px 5px black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.b-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 10px;
+    background-color: rgba(14, 85, 81, 0.5);
+    text-align: center;
+    top: 550px;
+    left: 40vw;
+}
+
+#d-on {
+    width: 82%;
+    background-color: green;
+    display: none;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#d-off {
+    width: 82%;
+    background-color: green;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.b-container button {
+    margin: 5px;
+    border: none;
+    width: 8vw;
+    padding: 5px;
+    border-radius: 10%;
+    background-color: rgb(33, 128, 123);
+}
+
+#play {
+    display: block;
+    transition: all 1s ease-out;
+}
+
+#play:hover {
+    background-color: lightcyan;
+}
+
+#pause {
+    transition: all 1s ease-out;
+}
+
+#pause:hover {
+    background-color: lightcyan;
+}

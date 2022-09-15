@@ -1,6 +1,7 @@
+'use strict';
 
 document.addEventListener('DOMContentLoaded', () => {
-    'use strict';
+
 
 
     const listcontainer = document.getElementById('list-container');
@@ -63,6 +64,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     title[0].contentEditable = 'true';
                     let comment = faEdit[i].parentElement.parentElement.parentElement.parentElement.querySelectorAll('#comment');
                     comment[0].contentEditable = 'true';
+                    title[0].style.border = '1px solid red';
+                    comment[0].style.border = '1px solid red';
                     localStorage.setItem('lista', listcontainer.innerHTML);
                 })
             }
@@ -75,6 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 faHighlight[i].addEventListener('click', () => {
                     let title = faHighlight[i].parentElement.parentElement.parentElement.parentElement.querySelectorAll('#title');
                     title[0].style.background = "lightseagreen"; 
+                    
                 })
 
             }
@@ -89,6 +93,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     let comment = faEdit[i].parentElement.parentElement.parentElement.parentElement.querySelectorAll('#comment');
                     title[0].contentEditable = 'false';
                     comment[0].contentEditable = 'false';
+                    title[0].style.border = 'none';
+                    comment[0].style.border = 'none';
                     localStorage.setItem('lista', listcontainer.innerHTML);
                 })
             }
