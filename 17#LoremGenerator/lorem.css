@@ -1,0 +1,33 @@
+body {
+    background-color: whitesmoke;
+}
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.generator {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.generator button {
+    color: rgb(211, 35, 35);
+    font-weight: bold;
+    border: none;
+}
+
+.generator button:hover {
+    background-color: burlywood;
+}
+
+.display {
+    width: 50%;
+    margin: 0 auto;
+}
