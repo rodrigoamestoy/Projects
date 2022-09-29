@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     const nextBtn = document.getElementById('next'); 
     const joke = await getNewJoke();
 
+    console.log(joke)
+
     ARRAY.push(joke);   
 
     jokesDiv.innerHTML = joke;

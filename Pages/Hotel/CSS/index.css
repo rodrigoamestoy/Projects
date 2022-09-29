@@ -11,10 +11,7 @@
 /* Logo font-family: 'Ms Madi', cursive;*/
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@500&family=Ms+Madi&family=Roboto+Condensed:ital,wght@1,300&display=swap');
 
-/* Header */
-
-html {
-}
+/* Navbar */
 
 body {
     font-family: var(--body-font);
@@ -39,13 +36,20 @@ nav a {
     text-decoration: none;
     color: black;
 }
+.logo {
+    font-family: var(--logo-font);
+}
 
 /* Presentation */
 
 .presentation-container {
     width: 90%;
+    height: 500px;
     margin: 0 auto;
+    background-image: url(/img/img1.jpg);
+    background-size: 100% 600px;
+    background-repeat: no-repeat;
 }
 .main-card {
-    
+
 }
