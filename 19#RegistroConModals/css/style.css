@@ -1,0 +1,27 @@
+.container {
+  max-width: 960px;
+}
+
+input:valid {
+  border: 1px solid green;
+}
+
+.succes-alert {
+  position: absolute;
+  visibility: hidden;
+  width: 60%;
+  text-align: center;
+  background-color: greenyellow;
+  border: 4px double green;
+  color: whitesmoke;
+  font-weight: bold;
+  margin: 0 auto;
+  top: 40%;
+  left: 20%;
+}
+.succes-alert p {
+  margin-top: 2%;
+  font-size: 1.8rem;
+  text-shadow: 1px 1px black;
+  letter-spacing: 2px;
+}
